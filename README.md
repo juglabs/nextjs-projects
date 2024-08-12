@@ -21,7 +21,7 @@ This nextjs-projects repo contains different Next.js projects
     The **components/server-components** contain the server-components meant to display the Current tasks, completed tasks and Add Task. They are designed as 
     Server Components because they deal with backend. They DON'T contain any event handlers nor state. 
 
-    **KEY LEARNINGs**
+    ### KEY LEARNINGs
     - **REVALIDATEPATH** thing. Every time a task is updated/deleted, ensure the COMPONENT responsible to render that Particular task
         is revalidated to reflect the latest change and not show the cached data. 
     - **useState is ASYNCHRONOUS**. So don't use state variables directly for any logical operations. Retrieve the state data and store it in a local let variable
@@ -29,5 +29,5 @@ This nextjs-projects repo contains different Next.js projects
     - By default all components or files are server components or run on the server. 
     - If you want to manage STATE or use callbacks or event handlers, then make that component a CLIENT COMPONENT using 'use client'
 
-    ## MISC
+    ### MISC
     The **utils/dbUtils** contain all the logic facing the Database 
